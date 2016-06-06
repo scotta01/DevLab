@@ -1,0 +1,6 @@
+Local Admin Password = $etup01
+Machines = DEV-DC01, DEV-S4B01, DEV-EX01, DEV-WEB01, DEV-DSC01
+Domain - devlab.local
+Domain Admin Password = $etup01
+
+Template = (MSDN Key), WMF 5.0, IE ESC Off, sxs copied to C:\sources, Add PSGallery to trusted repositories, Sysprepped
