@@ -19,25 +19,6 @@ if(!(Test-Path $ParentPath)){
 if(!(Get-VMSwitch $LABswitch -ErrorAction SilentlyContinue)){
     New-VMSwitch -Name $LABSwitch -SwitchType Internal
 }
-#$machines = @(
-#    [pscustomobject]@{
-#        Name = "DEV-DC01"
-#        RAM = 2GB
-#    },
-#    [pscustomobject]@{
-#        Name = "DEV-S4B01"
-#        RAM = 2GB
-#    },
-#    [pscustomobject]@{
-#        Name = "DEV-EX01"
-#        RAM = 2GB
-#   },
-#    [pscustomobject]@{
-#        Name = "DEV-WEB01"
-#        RAM = 2GB
-#    }
-#    
-#)
 
 Import-LocalizedData -BaseDirectory "$PSScriptRoot\DSC Configs" -FileName ConfigData.psd1 -BindingVariable machines
 
